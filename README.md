@@ -4,7 +4,7 @@ Landing WEB project for Adler inc.
 
 ## Command
 
-Case 0. Initial running project
+Case A. Initial running project
 
 1. Install packages (Just once at initial time)
 
@@ -18,7 +18,7 @@ yarn install
 yarn dev
 ```
 
-Case 2. Publish to Hosting
+Case B. Publish to Hosting
 
 ```
 Will be written.
