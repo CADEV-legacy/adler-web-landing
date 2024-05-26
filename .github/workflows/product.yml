@@ -1,4 +1,4 @@
-name: Branch 'product' CI / CD
+name: (CI/CD) product
 
 on:
   push:
