@@ -14,6 +14,9 @@ export const getTypography = (breakpoints: BreakpointsOptions): TypographyOption
     fontSize: '3rem',
     fontWeight: '700',
     lineHeight: 'normal',
+    [breakpoints.down!('sm')]: {
+      fontSize: '1.5rem',
+    },
   },
   h2: {
     fontSize: '2rem',
