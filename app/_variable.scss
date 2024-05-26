@@ -1,0 +1,31 @@
+// Breakpoints
+$breakpoint-xl: 1920px;
+$breakpoint-lg: 1440px;
+$breakpoint-md: 1024px;
+$breakpoint-sm: 480px;
+$breakpoint-xs: 0;
+
+// Colors
+$white: #ffffff;
+$black: #000000;
+$success: #63b100;
+$error: #f00;
+$errorHover: #cc0000;
+$warning: #ead200;
+$theme1: #fc2d7c;
+$theme1Light1: #fc3e86;
+$theme1Light2: #ff8eb9;
+$theme1Active: #fc4f91;
+$theme1Disabled: #feafcd;
+$theme2: #ffe5ef;
+$theme2Light1: #ffe7f0;
+$theme2Active: #ffe9f2;
+$theme2Disabled: #fff5f9;
+
+@function blackAlpha($alpha) {
+  @return rgba(0, 0, 0, $alpha);
+}
+
+@function whiteAlpha($alpha) {
+  @return rgba(255, 255, 255, $alpha);
+}

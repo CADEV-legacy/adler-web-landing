@@ -1,0 +1,67 @@
+@import '@/_mixin.scss';
+@import '@/_variable.scss';
+
+.container {
+  width: 100%;
+  padding: 5rem 1.25rem;
+}
+
+.footerHeaderTextContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  & > span {
+    border-width: 0.0313rem;
+    height: 1rem;
+    border-style: solid;
+    border-color: whiteAlpha(0.2);
+    line-height: inherit;
+  }
+}
+
+.emailTextLink {
+  text-decoration: none;
+  color: $white;
+}
+
+.emailTextContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}
+
+.emailIconWrapper {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.footerTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.footerTextFlexContainer {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.footerText {
+  & > span {
+    font-weight: 700;
+  }
+}
+
+.lastFooterText {
+  margin-top: 1.25rem;
+}

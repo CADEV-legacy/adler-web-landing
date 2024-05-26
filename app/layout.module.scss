@@ -1,0 +1,29 @@
+@import '@/_mixin.scss';
+@import '@/_variable.scss';
+
+.scrollableLayout {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.maxWidthLayout {
+  max-width: 90rem;
+  margin: 0 auto;
+
+  @include mobile {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.backgroundLayout {
+  width: 100%;
+}
+
+.main {
+  width: 100%;
+  padding: 0 1.25rem;
+  min-height: calc(100vh - 17.5rem);
+}

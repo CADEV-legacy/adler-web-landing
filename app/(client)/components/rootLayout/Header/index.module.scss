@@ -1,0 +1,39 @@
+@import '@/_mixin.scss';
+@import '@/_variable.scss';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 1.25rem;
+  height: 4.5rem;
+}
+
+.adlerLogoWrapper {
+  position: relative;
+  width: 6.875rem;
+  padding-top: 1.75rem;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.navigationContainer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+}
+
+.navigation {
+  text-decoration: none;
+  color: $white;
+  transition: all 0.2s ease-in-out;
+}
+
+.navigation:hover {
+  transform: scale(1.05);
+}
