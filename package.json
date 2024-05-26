@@ -6,8 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "postbuild": "yarn build:sitemap && if [ -f '*.map' ]; then yarn delete:sourcemap; fi",
-    "build:sitemap": "next-sitemap",
     "delete:sourcemap": "find .next -type f -name '*.map' -delete",
     "clear": "rm -r .next",
     "lint": "next lint",

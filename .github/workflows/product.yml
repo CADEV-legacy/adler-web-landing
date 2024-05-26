@@ -1,4 +1,4 @@
-name: team.adler.cx product CI/CD
+name: Branch 'product' CI / CD
 
 on:
   push:
@@ -10,6 +10,15 @@ jobs:
     steps:
       - name: Git Checkout
         uses: actions/checkout@v3
+
+      - name: Setup Environment Variables
+        run: |
+          IFS='/' read -ra BRANCH <<< "$GITHUB_REF"
+          branch=${BRANCH[2]}
+          echo "BRANCH=$branch" >> .env
+          echo "NEXT_PUBLIC_BRANCH=$branch" >> .env
+          echo "DOMAIN=https://team.adler.cx" >> .env
+          echo "NEXT_PUBLIC_DOMAIN=https://team.adler.cx" >> .env
 
       - name: Setup Node.js (v20.x)
         uses: actions/setup-node@v3
