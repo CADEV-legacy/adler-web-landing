@@ -11,8 +11,7 @@
     "delete:sourcemap": "find .next -type f -name '*.map' -delete",
     "clear": "rm -r .next",
     "lint": "next lint",
-    "lint:fix": "next lint --fix",
-    "build:publish": "next build && next export"
+    "lint:fix": "next lint --fix"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
