@@ -5,6 +5,9 @@ export const ROUTE_URL = {
 
 export const OUTER_LINK = {
   product: 'https://adler3d.com',
+  banner: 'https://bit.ly/44Pqs5w',
+  introduce: 'https://bit.ly/4dHqArH',
+  blog: '',
 } as const;
 
 export const STATIC_TEXT = {
@@ -23,6 +26,15 @@ export const COLOR = {
   warningHover: '#ff8800',
   error: '#ff4444',
   errorHover: '#cc0000',
+  theme1: '#fc2d7c',
+  theme1Light1: '#fc3e86',
+  theme1Light2: '#ff8eb9',
+  theme1Active: '#fc4f91',
+  theme1Disabled: '#feafcd',
+  theme2: '#ffe5ef',
+  theme2Light1: '#ffe7f0',
+  theme2Active: '#ffe9f2',
+  theme2Disabled: '#fff5f9',
   blackAlpha: (opacity: number) => `rgba(0, 0, 0, ${opacity})`,
   whiteAlpha: (opacity: number) => `rgba(255, 255, 255, ${opacity})`,
 } as const;

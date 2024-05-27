@@ -74,4 +74,26 @@ export const getComponents = (breakpoints: BreakpointsOptions): BaseComponents<B
       },
     },
   },
+  MuiAccordionSummary: {
+    styleOverrides: {
+      root: {
+        backgroundColor: COLOR.black,
+        borderBottomWidth: '.0625rem',
+        borderColor: COLOR.whiteAlpha(0.8),
+        borderStyle: 'solid',
+        padding: 0,
+      },
+    },
+  },
+  MuiAccordionDetails: {
+    styleOverrides: {
+      root: {
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'column',
+        backgroundColor: COLOR.white,
+        padding: '3.75rem 2.5rem',
+      },
+    },
+  },
 });

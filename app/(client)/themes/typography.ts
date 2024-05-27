@@ -21,11 +21,11 @@ export const getTypography = (breakpoints: BreakpointsOptions): TypographyOption
   h2: {
     fontSize: '2rem',
     fontWeight: '700',
-    lineHeight: 'normal',
+    lineHeight: '3.75rem',
   },
   h3: {
     fontSize: '1.5rem',
-    fontWeight: '400',
+    fontWeight: '700',
     lineHeight: 'normal',
   },
   h4: {
@@ -64,8 +64,8 @@ export const getTypography = (breakpoints: BreakpointsOptions): TypographyOption
     lineHeight: 'normal',
   },
   button: {
-    fontSize: '1rem',
-    fontWeight: '400',
+    fontSize: '1.5rem',
+    fontWeight: '700',
     lineHeight: 'normal',
   },
 });

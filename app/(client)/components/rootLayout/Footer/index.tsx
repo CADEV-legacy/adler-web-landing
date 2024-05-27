@@ -1,5 +1,6 @@
 import { Typography } from '@mui/material';
 
+import { BlogText } from './BlogText';
 import { EmailText } from './EmailText';
 import styles from './index.module.scss';
 import { TelephoneText } from './TelephoneText';
@@ -17,6 +18,8 @@ export const Footer: React.FC = () => {
         </Typography>
         <span />
         <EmailText />
+        <span />
+        <BlogText />
       </div>
       <Divider />
       <div className={styles.footerTextContainer}>

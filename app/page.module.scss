@@ -1,4 +1,146 @@
-.container {
+@import '@/_mixin.scss';
+@import '@/_variable.scss';
+
+.bannerSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
   width: 100%;
-  height: 100%;
+  height: 50rem;
+  opacity: 0;
+  animation: bannerSectionAnimation 1s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bannerSectionAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(2.5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bannerSectionTitleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.bannerSectionLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  text-decoration: none;
+  color: $theme1;
+  transition: all 0.2s ease-in-out;
+
+  & > svg {
+    font-size: 1.5rem;
+  }
+}
+
+.bannerSectionLink:hover {
+  color: $theme1Light1;
+  transform: scale(1.05);
+}
+
+.greetingSection {
+  display: flex;
+  gap: 5rem;
+  width: 100%;
+  background-color: $white;
+  border-radius: 0.5rem;
+}
+
+.greetingSectionTitle {
+  display: flex;
+  justify-content: space-between;
+  width: 31.25rem;
+  padding: 7.5rem 5rem;
+  background-color: $theme1;
+  border-radius: 0.5rem;
+}
+
+.greetingSectionContent {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 31.25rem);
+  padding: 7.5rem 5rem 7.5rem 0;
+}
+
+.introduceSection {
+  width: 100%;
+  margin-top: 10rem;
+}
+
+.introduceSectionTitle {
+  margin-bottom: 2.5rem !important;
+}
+
+.introduceSectionSubtitle {
+  margin-bottom: 10rem !important;
+}
+
+.introduceSectionContent {
+  margin-bottom: 7.5rem !important;
+}
+
+.introduceSectionLink {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: $theme1;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+
+  & > svg {
+    font-size: 1.5rem;
+  }
+}
+
+.introduceSectionLink:hover {
+  color: $theme1Light1;
+  transform: scale(1.05);
+}
+
+.teamCulterSection {
+  width: 100%;
+  margin-top: 7.5rem;
+  padding: 7.5rem;
+  background-color: $white;
+  border-radius: 0.5rem;
+}
+
+.teamCultureTitle {
+  margin-bottom: 7.5rem !important;
+}
+
+.teamCultureDescription {
+  margin-bottom: 1.5rem !important;
+}
+
+.teamCultureCardContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.jobDescriptionSection {
+  width: 100%;
+  margin-top: 7.5rem;
+  padding: 7.5rem;
+}
+
+.jobDescriptionContainer {
+  margin: 7.5rem 0;
 }
