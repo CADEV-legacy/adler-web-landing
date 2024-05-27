@@ -7,7 +7,9 @@ export const OUTER_LINK = {
   product: 'https://adler3d.com',
   banner: 'https://bit.ly/44Pqs5w',
   introduce: 'https://bit.ly/4dHqArH',
-  blog: '',
+  blog: 'https://www.linkedin.com/in/yurica-ovaerenu-8aba44187?utm_source=share&utm_campaign=share_via&utm_content=profile',
+  apply:
+    'https://docs.google.com/forms/d/e/1FAIpQLSdwLo92wX2KnFuCvYbXBMHuFOYHLmrD9axQVfMESLmbPmIiHw/viewform?pli=1',
 } as const;
 
 export const STATIC_TEXT = {

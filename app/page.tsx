@@ -30,7 +30,7 @@ export default function Home() {
       </section>
       <section className={styles.greetingSection}>
         <div className={styles.greetingSectionTitle}>
-          <Typography variant='h1' lineHeight='3.25rem'>
+          <Typography variant='h1'>
             Hello.
             <br />
             I&apos;m Yurica
@@ -214,7 +214,12 @@ export default function Home() {
               {
                 title: 'Art Director',
                 content: {
-                  informations: [],
+                  informations: [
+                    'Location: Fully Remote (Open to applicants from every country)',
+                    'Type: Full-Time',
+                    'Duration: Flexible, with potential for conversion to a permanent role based on performance.',
+                    'Compensation: Our starting salaries for Art Directors are matched to the levels of developing countries. After 3 months, there is an opportunity for re-negotiation, and stock options are available.',
+                  ],
                   responsibilities: [
                     'Collaborate with cross-functional teams, including UI/UX designers, 3D artists, and product managers, to understand and integrate project requirements into the visual design.',
                     'Lead the development of the brand identity, ensuring consistency across various digital platforms and coherence in visual elements such as logos, typography, color schemes, and overall visual language.',
@@ -245,19 +250,70 @@ export default function Home() {
               {
                 title: 'User Experience Designer',
                 content: {
-                  informations: [],
-                  responsibilities: [],
-                  requiredQualifications: [],
-                  optionalQualifications: [],
+                  informations: [
+                    'Location: Fully Remote (Open to applicants from every country)',
+                    'Type: Full-Time',
+                    'Duration: Flexible, with potential for conversion to a permanent role based on performance.',
+                    'Compensation: Our starting salaries for User Experience Designers are matched to the levels of developing countries. After 3 months, there is an opportunity for re-negotiation, and stock options are available.',
+                  ],
+                  responsibilities: [
+                    'Design and refine user interfaces for our 3D platforms, ensuring they align with our mission to create virtual spaces where individuals can truly be themselves, while seamlessly integrating 2D components where necessary.',
+                    'Collaborate with cross-functional teams including developers, product managers, and an Art Director to understand project requirements and influence user experience strategies.',
+                    'Develop detailed wireframes, mockups, and prototypes using Figma to effectively communicate interaction and design ideas across both 2D and 3D formats.',
+                    'Conduct user research and usability testing to gather feedback and refine design approaches, ensuring the final products resonate well with target audiences.',
+                    'Create visual elements such as icons, graphics, and layouts that enhance user interaction in both 3D environments and traditional 2D interfaces, demonstrating a strong sense of art and design.',
+                    'Evaluate and iterate on design solutions based on user feedback and analytics data.',
+                    'Stay up-to-date with the latest Ul/UX trends, techniques, and technologies, particularly in 3D and immersive technologies, while also maintaining a strong foundation in 2D design principles.',
+                  ],
+                  requiredQualifications: [
+                    "Bachelor's degree in Design, Computer Science, or related field.",
+                    'At least 5 years of experience in Ul/UX design, with a portfolio showcasing proficiency in graphic design and projects involving complex user interfaces across both 2D and 3D dimensions.',
+                    'Strong understanding of design principles and user-centered design methodologies.',
+                    'Proficiency in Figma and other design tools such as Adobe Creative Suite, Sketch, and prototyping tools like Axure, InVision, or similar.',
+                    'Excellent visual design skills with a refined sense of art and sensitivity to user-system interaction.',
+                    'Strong communication and collaboration abilities, capable of explaining design concepts and strategies clearly and working effectively with an Art Director.',
+                    'Proven ability to conduct comprehensive user research and usability testing.',
+                  ],
+                  optionalQualifications: [
+                    'Experience with 3D modeling software (e.g., Blender, Maya, 3ds Max) and related file formats (e.g., OBJ, FBX).',
+                    'Familiarity with VR platforms and interactive design for virtual environments.',
+                    'Knowledge of optimizing 3D files for high performance, which is highly advantageous in ensuring efficient and effective user experiences in our 3D environments.',
+                  ],
                 },
               },
               {
                 title: 'Senior Software Engineer',
                 content: {
-                  informations: [],
-                  responsibilities: [],
-                  requiredQualifications: [],
-                  optionalQualifications: [],
+                  informations: [
+                    'Location: Fully Remote (Open to applicants from every country)',
+                    'Type: Full-Time',
+                    'Duration: Flexible, with potential for conversion to a permanent role based on performance.',
+                    'Compensation: Our starting salaries for Senior Software Engineers are matched to the levels of developing countries. After 3 months, there is an opportunity for re-negotiation, and stock options are available.',
+                  ],
+                  responsibilities: [
+                    'Lead the design, development, and implementation of complex features for our 3D content creation platform, including integration with our new XRML language and development engine.',
+                    'Write clean, efficient, and well-documented code across front-end and back-end technologies.',
+                    'Collaborate closely with cross-functional teams to translate requirements into robust technical solutions that align with our proprietary technologies.',
+                    'Utilize JIRA Kanban to manage projects and tasks efficiently.',
+                    'Guide team members in architectural best practices, optimization techniques, and the specifics of our proprietary development tools to improve system performance and scalability.',
+                    'Participate in code reviews and maintain high standards for code quality.',
+                    'Stay updated on new technologies and best practices in the fields of programming languages, compilers, and game engine development.',
+                    'Solve complex technical problems and provide solutions that enhance the efficiency and quality of our platform.',
+                  ],
+                  requiredQualifications: [
+                    'A degree in Computer Science, Engineering, or related field is preferred but not mandatory.',
+                    'Minimum 5+ years of software engineering experience, with a strong background in 3D game development and full-stack capabilities.',
+                    'Proficient in Next.js, Babylon.js, FastAPl, Node.js, and familiar with AWS and Google Cloud platforms.',
+                    'Demonstrated ability in system architecture and optimization, with a focus on creating efficient, scalable solutions.',
+                    'Excellent problem-solving skills, with the ability to independently tackle complex technical challenges.',
+                    'Strong understanding of programming languages and compiler theory, particularly as they apply to game development and proprietary engines.',
+                    'Ability to guide and mentor team members in best practices for software development, optimization, and understanding proprietary languages and tools.',
+                  ],
+                  optionalQualifications: [
+                    'Experience with additional 3D content creation tools and platforms.',
+                    'Open-source contributions in the 3D development, compiler construction, or full-stack development space.',
+                    'Experience in developing or contributing to the development of programming languages or game engines.',
+                  ],
                 },
               },
               {

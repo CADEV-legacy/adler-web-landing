@@ -21,8 +21,18 @@ export const TextContainer = styled(Link)({
   },
 });
 
-export const BlogImageWrapper = styled('div')({
+export const BlogImageWrapper = styled('div')(({ theme }) => ({
   position: 'relative',
   width: '1.5rem',
   height: '1.5rem',
-});
+
+  [theme.breakpoints.down('sm')]: {
+    width: '1rem',
+    height: '1rem',
+
+    '& svg': {
+      width: '1rem',
+      height: '1rem',
+    },
+  },
+}));

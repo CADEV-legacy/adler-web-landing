@@ -22,36 +22,59 @@ export const getTypography = (breakpoints: BreakpointsOptions): TypographyOption
     fontSize: '2rem',
     fontWeight: '700',
     lineHeight: '3.75rem',
+    [breakpoints.down!('sm')]: {
+      fontSize: '1.25rem',
+      lineHeight: '2rem',
+    },
   },
   h3: {
     fontSize: '1.5rem',
     fontWeight: '700',
     lineHeight: 'normal',
+    [breakpoints.down!('sm')]: {
+      fontSize: '1.125rem',
+      lineHeight: '1.75rem',
+    },
   },
   h4: {
     fontSize: '1.25rem',
     fontWeight: '400',
     lineHeight: 'normal',
+    [breakpoints.down!('sm')]: {
+      fontSize: '1rem',
+    },
   },
   h5: {
     fontSize: '1rem',
     fontWeight: '400',
     lineHeight: 'normal',
+    [breakpoints.down!('sm')]: {
+      fontSize: '.875rem',
+    },
   },
   h6: {
     fontSize: '.75rem',
     fontWeight: '400',
     lineHeight: 'normal',
+    [breakpoints.down!('sm')]: {
+      fontSize: '.625rem',
+    },
   },
   body1: {
     fontSize: '1rem',
     fontWeight: '400',
     lineHeight: 'normal',
+    [breakpoints.down!('sm')]: {
+      fontSize: '.875rem',
+    },
   },
   body2: {
     fontSize: '.875rem',
     fontWeight: '400',
     lineHeight: 'normal',
+    [breakpoints.down!('sm')]: {
+      fontSize: '.75rem',
+    },
   },
   subtitle1: {
     fontSize: '1.5rem',
@@ -67,5 +90,8 @@ export const getTypography = (breakpoints: BreakpointsOptions): TypographyOption
     fontSize: '1.5rem',
     fontWeight: '700',
     lineHeight: 'normal',
+    [breakpoints.down!('sm')]: {
+      fontSize: '1rem',
+    },
   },
 });

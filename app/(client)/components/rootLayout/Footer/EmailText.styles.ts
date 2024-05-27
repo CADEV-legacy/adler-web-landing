@@ -17,8 +17,18 @@ export const TextContainer = styled('div')({
   },
 });
 
-export const EmailIconWrapper = styled('div')({
+export const EmailIconWrapper = styled('div')(({ theme }) => ({
   position: 'relative',
   width: '1.5rem',
   height: '1.5rem',
-});
+
+  [theme.breakpoints.down('sm')]: {
+    width: '1rem',
+    height: '1rem',
+
+    '& svg': {
+      width: '1rem',
+      height: '1rem',
+    },
+  },
+}));

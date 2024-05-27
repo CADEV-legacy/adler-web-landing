@@ -6,7 +6,7 @@ import { Accordion, AccordionDetails, AccordionSummary, Typography } from '@mui/
 
 import * as S from './JobDescriptionAccordion.styles';
 
-import { COLOR } from '@/constant';
+import { COLOR, OUTER_LINK } from '@/constant';
 
 const HIRING_PROCESS = [
   'To apply for the position, please follow our application process.',
@@ -41,7 +41,7 @@ export const JobDescriptionAccordion: React.FC<JobDescriptionAccordionProps> = (
     };
 
   const onApplyButtonClick = () => {
-    console.log('Apply button clicked');
+    window.open(OUTER_LINK.apply, '_blank');
   };
 
   const onCloseAccordionTextClick = () => {

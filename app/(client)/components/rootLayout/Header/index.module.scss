@@ -8,6 +8,24 @@
   width: 100%;
   padding: 0 1.25rem;
   height: 4.5rem;
+
+  @include mobile {
+    padding: 0 1rem;
+  }
+}
+
+.adlerTeamLogoContainer {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+
+  & > h3 {
+    line-height: 90% !important;
+  }
+
+  @include mobile {
+    gap: 0.5rem;
+  }
 }
 
 .adlerLogoWrapper {

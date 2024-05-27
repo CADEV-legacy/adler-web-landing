@@ -3,7 +3,7 @@ import { Typography, styled } from '@mui/material';
 
 import { COLOR } from '@/constant';
 
-export const Container = styled('div')({
+export const Container = styled('div')(({ theme }) => ({
   position: 'relative',
   width: 'calc((100% - 5rem) / 3)',
   height: '30rem',
@@ -25,7 +25,11 @@ export const Container = styled('div')({
       transform: 'unset',
     },
   },
-});
+  [theme.breakpoints.down('sm')]: {
+    width: '100%',
+    height: '30rem',
+  },
+}));
 
 export const CardTitle = styled(Typography)({
   '&.titleAnimation': {

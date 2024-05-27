@@ -4,6 +4,10 @@
 .container {
   width: 100%;
   padding: 5rem 1.25rem;
+
+  @include mobile {
+    padding: 1.5rem 1.5rem;
+  }
 }
 
 .footerHeaderTextContainer {
@@ -18,29 +22,20 @@
     border-color: whiteAlpha(0.2);
     line-height: inherit;
   }
-}
 
-.emailTextLink {
-  text-decoration: none;
-  color: $white;
-}
+  @include mobile {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
 
-.emailTextContainer {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  transition: all 0.2s ease-in-out;
+    & > span {
+      display: none;
+    }
 
-  &:hover {
-    cursor: pointer;
-    transform: scale(1.05);
+    & > h1 {
+      font-size: 1rem !important;
+    }
   }
-}
-
-.emailIconWrapper {
-  position: relative;
-  width: 1.5rem;
-  height: 1.5rem;
 }
 
 .footerTextContainer {
@@ -48,12 +43,21 @@
   flex-direction: column;
   gap: 1rem;
   width: 100%;
+
+  @include mobile {
+    gap: 0.5rem;
+  }
 }
 
 .footerTextFlexContainer {
   width: 100%;
   display: flex;
   gap: 1rem;
+
+  @include mobile {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
 
 .footerText {
@@ -64,4 +68,8 @@
 
 .lastFooterText {
   margin-top: 1.25rem;
+
+  @include mobile {
+    margin-top: 0.5rem;
+  }
 }

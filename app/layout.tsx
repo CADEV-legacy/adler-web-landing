@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 
 import './global.scss';
 import styles from './layout.module.scss';
@@ -8,9 +8,43 @@ import { combinedFontFamily } from '@/(client)/utils';
 
 import { Footer, Header } from '@/(client)/components/rootLayout';
 
+import { SERVER_SETTINGS } from '@/settings';
+import { OUTER_LINK } from './constant';
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  minimumScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
 export const metadata: Metadata = {
-  title: 'Adler',
-  description: 'Adler ... description',
+  title: 'Adler Team',
+  description: 'Join Adler Team!',
+  keywords: 'Adler, Adler Team, Adler Hiring, Adler Recruitment',
+  robots: 'index, follow',
+  metadataBase: new URL(SERVER_SETTINGS.DOMAIN),
+  openGraph: {
+    siteName: 'Adler Team',
+    locale: 'ko_KR',
+    title: 'Adler Team',
+    description: 'Join Adler Team!',
+    type: 'website',
+    url: new URL(SERVER_SETTINGS.DOMAIN),
+    images: [
+      {
+        url: new URL('/images/adlerLogo.png', SERVER_SETTINGS.DOMAIN).toString(),
+        width: 1200,
+        height: 630,
+        alt: 'Adler Team',
+      },
+    ],
+  },
+  authors: [
+    { name: 'Sejin Han', url: new URL(OUTER_LINK.blog) },
+    { name: 'Yurica Ovaerenu', url: new URL(OUTER_LINK.blog) },
+  ],
 };
 
 export default function RootLayout({

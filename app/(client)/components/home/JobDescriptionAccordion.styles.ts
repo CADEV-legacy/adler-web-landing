@@ -11,11 +11,15 @@ export const CustomKeyboardDoubleArrowDownIcon = styled(KeyboardDoubleArrowDownI
   color: COLOR.white,
 });
 
-export const JobDescriptionTitle = styled(Typography)({
+export const JobDescriptionTitle = styled(Typography)(({ theme }) => ({
   marginBottom: '5rem',
-});
 
-export const ApplyButton = styled(Button)({
+  [theme.breakpoints.down('sm')]: {
+    marginBottom: '2.5rem',
+  },
+}));
+
+export const ApplyButton = styled(Button)(({ theme }) => ({
   width: '26.25rem',
   padding: '1rem 0',
   backgroundColor: COLOR.theme1,
@@ -24,20 +28,36 @@ export const ApplyButton = styled(Button)({
   '&:hover': {
     backgroundColor: COLOR.theme1Light1,
   },
-});
 
-export const JobDescriptionContentContainer = styled('div')({
+  [theme.breakpoints.down('sm')]: {
+    width: '100%',
+    padding: '0.5rem',
+    marginBottom: '1.5rem',
+  },
+}));
+
+export const JobDescriptionContentContainer = styled('div')(({ theme }) => ({
   display: 'flex',
   width: '100%',
   padding: '2.5rem 0',
   borderBottom: `0.0625rem solid ${COLOR.blackAlpha(0.2)}`,
-});
 
-export const JobDescriptionContentTitle = styled('div')({
+  [theme.breakpoints.down('sm')]: {
+    flexDirection: 'column',
+    padding: '1rem 0',
+  },
+}));
+
+export const JobDescriptionContentTitle = styled('div')(({ theme }) => ({
   width: '17.5rem',
-});
 
-export const JobDescriptionContentDescription = styled('div')({
+  [theme.breakpoints.down('sm')]: {
+    width: '100%',
+    marginBottom: '1rem',
+  },
+}));
+
+export const JobDescriptionContentDescription = styled('div')(({ theme }) => ({
   width: 'calc(100% - 17.5rem)',
   fontSize: '1rem',
   ul: {
@@ -48,14 +68,23 @@ export const JobDescriptionContentDescription = styled('div')({
     fontSize: '80%',
     paddingRight: '1rem',
   },
-});
 
-export const JobDescriptionHelperText = styled(Typography)({
+  [theme.breakpoints.down('sm')]: {
+    width: '100%',
+  },
+}));
+
+export const JobDescriptionHelperText = styled(Typography)(({ theme }) => ({
   width: '100%',
   padding: '2.5rem 0',
   borderBottom: `0.0625rem solid ${COLOR.blackAlpha(0.2)}`,
   marginBottom: '5rem',
-});
+
+  [theme.breakpoints.down('sm')]: {
+    padding: '1rem 0',
+    marginBottom: '2.5rem',
+  },
+}));
 
 export const CloseAccordionText = styled(Typography)({
   color: COLOR.black,
