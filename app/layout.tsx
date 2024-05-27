@@ -8,8 +8,8 @@ import { combinedFontFamily } from '@/(client)/utils';
 
 import { Footer, Header } from '@/(client)/components/rootLayout';
 
+import { OUTER_LINK } from '@/constant';
 import { SERVER_SETTINGS } from '@/settings';
-import { OUTER_LINK } from './constant';
 
 export const viewport: Viewport = {
   width: 'device-width',
